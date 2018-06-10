@@ -1,0 +1,79 @@
+//
+//	MIXINS & FUNCTIONS
+//	A few simple Sass helpers.
+//
+
+// @font-face mixin
+// Order of the includes matters, and it is: normal, bold, italic, bold+italic.
+// Forked from Bourbon. https://github.com/thoughtbot/bourbon/
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+
+		src: url('#{$file-path}.eot');
+		src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+		     url('#{$file-path}.woff') format('woff'),
+		     url('#{$file-path}.ttf') format('truetype'),
+		     url('#{$file-path}.svg##{$font-family}') format('svg');
+	}
+}
+
+// Strip units from values
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+// Calculate ems from pixels
+@function calc-em($px, $base: 16) {
+	$px: strip-unit($px);
+	$base: strip-unit($base);
+	@if $px == 1 {
+		@return 0.0725em;
+	}
+	@return ($px / $base) * 1em;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+// Default options
+$defaultDuration: .3s;
+$primaryColour: #4a4a4a;
+$secondaryColour: #666;
+$shadowColour: rgba(0, 0, 0, .6);
+
+
+
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+@mixin hideTapHighlightColor() {
+	//Prevent highlight colour when element is tapped
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+	//Improve performance on mobile/tablet devices
+	transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+	//Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+

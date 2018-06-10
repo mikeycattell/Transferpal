@@ -1,0 +1,91 @@
+// @section Configuration Settings
+// Adjust colors, font stacks, breakpoints and sizing.
+//
+// Typographic Scale
+// (For math purposes. Actual font sizes in ems.)
+// 1px, 4px, 5px, 8px, 9px, 11px, 12px, 13px, 15px, 16px, 19px, 21px, 24px, 28px, 32px, 48px, 64px, 80px, 96px
+// line height: 1.5em on small screens, 1.5625em on big screens
+//
+
+// Colors
+$color-green: #377f31;
+$color-red: #880e14;
+$color-yellow: #dba909;
+
+$color-primary: #4A4A4A;
+$color-primary-light: #c1d7df;
+$color-secondary: #59c2e2;
+$color-secondary-light: #edf2f4;
+$color-highlight: #d5e63f;
+$color-black: #151515;
+$color-white: #ffffff;
+$color-code: #dd1144;
+
+$color-gray-dark: #808080;
+$color-gray-mid: #918f90;
+// $color-gray-mid-lighter: #e4e3e3;
+$color-gray-mid-light: #e7e5e5;
+$color-gray-light: #f5f5f5;
+$color-gray-ex-light: #f9fafb;
+
+$color-success: $color-green; // Green
+$color-danger: $color-red; // Red
+$color-warning: $color-yellow; // Yellow
+
+
+
+
+// Font Stacks
+$font-primary: "Futura LT Book", sans-serif;
+$font-header: "Futura LT Book", sans-serif;
+$font-bold: "Futura LT Book", sans-serif;
+$font-monospace: Menlo, Monaco, "Courier New", monospace;
+
+$font-size: 20;
+$font-weight: normal;
+$text-color: $color-white;
+
+// Breakpoints
+$bp-xsmall: 20em; //320px
+$bp-small: 30em; //480px
+$bp-medium: 40em; //640px
+$bp-large: 60em; // 960px
+$bp-xlarge: 80em; // 1280px
+
+$bp-nav-step1: 75.3125em; // 1205px
+$bp-nav-step2: 68.3125em; // 1093px
+$bp-nav-step3: 61.3125em; // 981px
+
+// Sizing
+$font-base: 100%;
+$font-xlarge-screens: 100%;
+$spacing: 1em;
+$container-max: 70rem;
+$container-width: 88%;
+
+
+// Grid
+$grid-margins: 1.4%;
+$grid-sizes: ( // name: width
+	fifth: 20%,
+	fourth: 25%,
+	third: 33.33333333333%,
+	four-tenths: 40%,
+	half: 50%,
+	six-tenths: 60%,
+	two-thirds: 66.666666666667%,
+	three-fourths: 75%,
+	four-fifths: 80%,
+	full: 100%
+);
+$grid-breakpoints: ( // breakpoint, prefix, include offsets (boolean)
+	($bp-xsmall, ".row-start-xsmall", false),
+	($bp-small, ".row-start-small", false),
+	($bp-medium, null, true)
+);
+
+
+// Icons
+$icons: ( // name, character, color
+	("logo", "e600", null),
+);

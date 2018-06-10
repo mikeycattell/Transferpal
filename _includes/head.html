@@ -1,0 +1,40 @@
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15536515-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15536515-1');
+</script>  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.url == "/" %}Mikey Cattell: A highly experienced Senior Product Digital Product Designer, Interaction Designer, Experience designer and Front-end Developer based in Leeds{% else %}{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} - Mikey Cattell{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <script type="text/javascript" src="/assets/instafeed.min.js"></script>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <meta property="og:site_name" content="Mikey Cattell" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description | escape }}{% endif %}
+" />
+  <meta name="og:image" content="http://www.michaelcattell.com/mikeycattell.jpg" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.description | escape }}{% endif %}
+" />
+  <meta name="twitter:image" content="http://www.michaelcattell.com/mikeycattell.jpg" />
+
+</head>

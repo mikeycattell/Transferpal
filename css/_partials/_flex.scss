@@ -1,0 +1,36 @@
+/* flexbox only */
+
+.flexbox {
+	.flex {
+		display: flex;
+		align-items: center;
+		&.inline > * {
+			margin-right: 0.75em;
+		}
+	}
+	.space-between {
+		justify-content: space-between;
+	}
+
+	.flex-end {
+		justify-content: flex-end;
+	}
+
+	.flex-start {
+		justify-content: flex-start;
+	}
+
+	.stretch {
+		align-self: stretch;
+	}
+}
+
+.no-flexbox {
+	.stretchContents {
+
+	}
+
+	.flex-end {
+		text-align: right;
+	}
+}

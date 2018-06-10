@@ -1,0 +1,1282 @@
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * @section CSS Reset
+ * Meyer's CSS Reset, Normalized.css, and custom code.
+ * @link http://meyerweb.com/eric/tools/css/reset/
+ * @link http://necolas.github.io/normalize.css/
+ */
+/**
+ * Mobile screen resizing
+ * @link http://dev.w3.org/csswg/css-device-adapt/
+ */
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@-moz-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@-o-viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+@viewport {
+  width: device-width;
+  zoom: 1.0; }
+
+/**
+ * Remove browser defaults
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+button, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Futura LT Book", sans-serif;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/**
+ * Add box sizing to everything
+ * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/**
+ * Set display type for HTML5 semantic elements
+ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/**
+ * Force scrollbar display to prevent jumping on pages.
+ * Fix text resize bug on mobile devices.
+ */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/**
+ * Display audio, canvas, and video elements as inline block elements.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying audio without controls.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Prevent img and video elements from spilling outside of the page on smaller screens.
+ */
+img,
+video {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Prevent iframe, object, and embed elements from spilling outside of the page on smaller screens.
+ */
+iframe,
+object,
+embed {
+  max-width: 100%; }
+
+/**
+ * Hide the template element in IE, Safari, and Firefox < 22.
+ */
+template {
+  display: none;
+  visibility: hidden; }
+
+/**
+ * Prevents IE from making scaled images look like crap
+ */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/**
+ * Address outline inconsistency between Chrome and other browsers.
+ */
+a:focus,
+button:focus {
+  outline: thin dotted;
+  outline: 0.3125em auto -webkit-focus-ring-color;
+  outline-offset: -0.15625em; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:hover,
+a:active {
+  outline: 0; }
+
+/**
+ * @section Grid
+ * Structure and layout
+ */
+/**
+ * Base grid styles: single column
+ */
+.container {
+  max-width: 70rem;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.row {
+  margin-left: -1.4%;
+  margin-right: -1.4%; }
+
+.grid-fifth, .grid-fourth, .grid-third, .grid-four-tenths, .grid-half, .grid-six-tenths, .grid-two-thirds, .grid-three-fourths, .grid-four-fifths, .grid-full {
+  float: left;
+  width: 100%;
+  padding-left: 1.4%;
+  padding-right: 1.4%; }
+
+/**
+ * Reverses order of grid for content choreography
+ */
+.grid-flip {
+  float: right; }
+
+.inner-grid {
+  padding-left: 0;
+  padding-right: 0; }
+
+/**
+ * Add columns to grid on bigger screens
+ */
+@media (min-width: 20em) {
+  .row-start-xsmall .grid-fifth {
+    width: 20%; }
+  .row-start-xsmall .grid-fourth {
+    width: 25%; }
+  .row-start-xsmall .grid-third {
+    width: 33.3333333333%; }
+  .row-start-xsmall .grid-four-tenths {
+    width: 40%; }
+  .row-start-xsmall .grid-half {
+    width: 50%; }
+  .row-start-xsmall .grid-six-tenths {
+    width: 60%; }
+  .row-start-xsmall .grid-two-thirds {
+    width: 66.6666666667%; }
+  .row-start-xsmall .grid-three-fourths {
+    width: 75%; }
+  .row-start-xsmall .grid-four-fifths {
+    width: 80%; }
+  .row-start-xsmall .grid-full {
+    width: 100%; } }
+
+@media (min-width: 30em) {
+  .row-start-small .grid-fifth {
+    width: 20%; }
+  .row-start-small .grid-fourth {
+    width: 25%; }
+  .row-start-small .grid-third {
+    width: 33.3333333333%; }
+  .row-start-small .grid-four-tenths {
+    width: 40%; }
+  .row-start-small .grid-half {
+    width: 50%; }
+  .row-start-small .grid-six-tenths {
+    width: 60%; }
+  .row-start-small .grid-two-thirds {
+    width: 66.6666666667%; }
+  .row-start-small .grid-three-fourths {
+    width: 75%; }
+  .row-start-small .grid-four-fifths {
+    width: 80%; }
+  .row-start-small .grid-full {
+    width: 100%; } }
+
+@media (min-width: 40em) {
+  .grid-fifth {
+    width: 20%; }
+  .grid-fourth {
+    width: 25%; }
+  .grid-third {
+    width: 33.3333333333%; }
+  .grid-four-tenths {
+    width: 40%; }
+  .grid-half {
+    width: 50%; }
+  .grid-six-tenths {
+    width: 60%; }
+  .grid-two-thirds {
+    width: 66.6666666667%; }
+  .grid-three-fourths {
+    width: 75%; }
+  .grid-four-fifths {
+    width: 80%; }
+  .grid-full {
+    width: 100%; }
+  .offset-fifth {
+    margin-left: 20%; }
+  .offset-fourth {
+    margin-left: 25%; }
+  .offset-third {
+    margin-left: 33.3333333333%; }
+  .offset-four-tenths {
+    margin-left: 40%; }
+  .offset-half {
+    margin-left: 50%; }
+  .offset-six-tenths {
+    margin-left: 60%; }
+  .offset-two-thirds {
+    margin-left: 66.6666666667%; }
+  .offset-three-fourths {
+    margin-left: 75%; }
+  .offset-four-fifths {
+    margin-left: 80%; }
+  .offset-full {
+    margin-left: 100%; } }
+
+/**
+ * Image gallery
+ */
+@media (min-width: 20em) {
+  .grid-img {
+    width: 50%; } }
+
+@media (min-width: 30em) {
+  .grid-img {
+    width: 33.33333333333%; } }
+
+@media (min-width: 40em) {
+  .grid-img {
+    width: 25%; } }
+
+/* Add clearfix */
+/*------------------------------------*\
+	$TYPE
+\*------------------------------------*/
+/*--type variables--*/
+/* rem sizing function */
+body {
+  color: #151515;
+  font-size: 0.8 rem;
+  font-size: 16px;
+  font-family: "Futura LT Book", sans-serif;
+  font-weight: normal;
+  line-height: 1.5rem; }
+
+/*--- HEADINGS ---*/
+.alpha {
+  font-size: 1.2 rem;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.90rem;
+  text-transform: none;
+  padding-bottom: 0.625em; }
+
+.beta {
+  font-size: 1.1 rem;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.0725em;
+  padding: 2.1875em 0 1.5625em; }
+  .beta.secondary {
+    color: #59c2e2;
+    margin: 1.5625em 0 0.9375em;
+    padding: 0;
+    position: relative;
+    z-index: 2; }
+    .beta.secondary span {
+      background: #ffffff;
+      padding: 0 1.5em; }
+    .beta.secondary:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 0;
+      left: 0;
+      top: calc(50% - 3px);
+      border-top: 3px solid #59c2e2; }
+
+.gamma {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 2px solid #59c2e2;
+  margin-bottom: 1.25em; }
+
+.delta {
+  font-weight: 600;
+  font-size: 0.8 rem;
+  font-size: 16px;
+  line-height: 22px;
+  color: #151515;
+  margin-bottom: 10px; }
+
+.epsilon {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #151515;
+  font-size: 0.7 rem;
+  font-size: 14px; }
+
+/*--- LISTS ---*/
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+@font-face {
+  font-family: 'slick';
+  src: url("../webfonts/slick.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/slick.eot?#iefix") format("embedded-opentype"), url("../webfonts/slick.woff") format("woff"), url("../webfonts/slick.ttf") format("truetype"), url("../webfonts/slick.svg#8853aab46fdf0d89da10dcad4b5b2854") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Futura LT Book';
+  src: url("../webfonts/Futura LT Book.eot");
+  /* IE9 Compat Modes */
+  src: url("../webfonts/Futura LT Book.eot?#iefix") format("embedded-opentype"), url("../webfonts/Futura LT Book.woff") format("woff"), url("../webfonts/Futura LT Book.ttf") format("truetype"), url("../webfonts/Futura LT Book.svg#432ca5434a2dd715580d888c804aa2b7") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+/**
+ * @section Typography
+ * Sets font styles for entire site
+ */
+body {
+  font-family: "Futura LT Book", sans-serif;
+  font-size: 20;
+  line-height: 1.5;
+  color: #151515;
+  background: #ffffff; }
+  @media (min-width: 40em) {
+    body {
+      line-height: 1.5625; } }
+
+p {
+  margin-bottom: 1em; }
+
+/**
+ * Sizes for smaller and larger text
+ */
+.text-small {
+  font-size: 0.9375em; }
+
+.text-tall {
+  font-size: 1.1875em;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  .text-tall {
+    font-size: 1.3125em; } }
+
+/**
+ * Alternate text colors
+ */
+.text-muted {
+  color: #808080; }
+
+/**
+ * Hyperlink styling
+ */
+a img {
+  border: none;
+  background: none; }
+
+/**
+ * Prevents border/background on linked image hover.
+ * Adds slight opacity.
+ */
+a:hover img {
+  border: none;
+  background: none;
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+/**
+ * List styling
+ */
+ul,
+ol,
+dl {
+  margin-bottom: 1em;
+  margin-left: 2em; }
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+dl {
+  margin-left: 0; }
+
+dt {
+  font-weight: bold; }
+
+/**
+ * Removes list styling.
+ * For semantic reasons, should only be used on unordered lists.
+ */
+.list-unstyled {
+  margin-left: 0;
+  list-style: none; }
+
+.list-inline li {
+  display: inline-block; }
+
+/**
+ * Heading styling for h1 through h6 elements.
+ * Heading class lets you use one heading type for semantics, but style it as another heading type.
+ */
+/**
+ * Lines, Quotes and Emphasis
+ */
+hr {
+  margin: 2em auto;
+  border: 0;
+  border-top: 0.0725em solid #f5f5f5;
+  border-bottom: 0 solid #ffffff; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+sub,
+sup {
+  position: relative;
+  font-size: 85%;
+  font-weight: bold;
+  line-height: 0;
+  vertical-align: baseline;
+  margin-left: 0.25em; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/**
+ * Highlighting colors
+ */
+::selection {
+  color: #ffffff;
+  background: #4A4A4A; }
+
+::-moz-selection {
+  color: #ffffff;
+  background: #4A4A4A; }
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  border-left: 0.25em solid #f5f5f5;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+/**
+ * @section Code
+ * Styling for code and preformatted text.
+ */
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 0.875em;
+  border-radius: 0.0725em; }
+
+code {
+  color: #dd1144;
+  background-color: white;
+  padding: 0.25em; }
+
+pre {
+  display: block;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  background-color: white;
+  padding: 0.8125em;
+  tab-size: 4;
+  white-space: pre-wrap;
+  word-break: break-all; }
+
+pre code {
+  font-size: 1em;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0; }
+
+/**
+ * @section Forms
+ * Styling for form elements.
+ */
+form,
+fieldset {
+  margin-bottom: 1em; }
+
+legend,
+label {
+  display: block;
+  font-weight: normal;
+  padding: 0;
+  margin-bottom: 0.3125em; }
+
+input,
+textarea,
+select {
+  font: inherit;
+  line-height: 1.5;
+  color: #434343;
+  padding: 0.3125em;
+  border-radius: 0;
+  font-weight: 300;
+  border: none;
+  font-size: 0.7 rem;
+  font-size: 14px; }
+  @media (min-width: 40em) {
+    input,
+    textarea,
+    select {
+      line-height: 1.5625; } }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.3125em 1.875em 0.3125em 0.625em; }
+
+form button,
+form .button {
+  margin-bottom: 1.1875em; }
+
+textarea {
+  height: 12em; }
+
+input[type="image"],
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-bottom: 0.3125em;
+  cursor: pointer; }
+
+input:focus,
+textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: inset 0 0.0725em 0.0725em rgba(0, 0, 0, 0.075), 0 0 0.5em rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9; }
+
+input[type="file"]:focus,
+input[type="checkbox"]:focus,
+select:focus {
+  outline: thin dotted;
+  outline: 0.3125em auto -webkit-focus-ring-color;
+  outline-offset: -0.125em; }
+
+/**
+ * Inline inputs
+ */
+.input-inline {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle; }
+
+/**
+ * Condensed inputs
+ */
+.input-condensed {
+  padding: 0.0725em 0.3125em;
+  font-size: 0.9375em; }
+
+/* Ui layout only */
+body {
+  height: 0;
+  background: #fff;
+  color: #4A4A4A;
+  margin: 0 0 0 0;
+  font-size: 0.9 rem;
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
+.col {
+  display: block;
+  float: left; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0; }
+
+/*--- LINKS ---*/
+a,
+a:visited {
+  color: #4A4A4A;
+  text-decoration: none;
+  word-wrap: break-word;
+  border-bottom: 2px solid #2F75C5; }
+
+a:focus,
+a:active {
+  color: #4A4A4A;
+  text-decoration: none; }
+
+a:hover {
+  color: #4A89DC !important;
+  border-color: #4A89DC !important;
+  text-decoration: none; }
+
+.page-content {
+  position: relative; }
+
+header {
+  margin-top: 80px; }
+  header .logo a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 0px solid #fff;
+    font-size: 20px; }
+
+/*font styles */
+.header-title h1 {
+  font-size: 26px;
+  position: relative;
+  margin: 0;
+  margin-top: 20%;
+  margin-left: 4.5rem;
+  line-height: 4.2rem; }
+
+.header-title h1:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-3rem, -0.1rem);
+  background-color: #0f1633;
+  width: 2rem;
+  height: .2rem;
+  content: ""; }
+
+.header-title-gen h1 {
+  font-size: 26px;
+  position: relative;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 4.5rem;
+  line-height: 4.2rem; }
+
+.header-title-gen h1:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-3rem, -0.1rem);
+  background-color: #0f1633;
+  width: 2rem;
+  height: .2rem;
+  content: ""; }
+
+.header-title-gen p {
+  font-size: 40px;
+  font-weight: 300; }
+
+.header-title-work h1 {
+  font-size: 26px;
+  position: relative;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 4.5rem;
+  line-height: 4.2rem; }
+
+.header-title-work h1:before {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-3rem, -0.1rem);
+  background-color: #0f1633;
+  width: 2rem;
+  height: .2rem;
+  content: ""; }
+
+.header-title-work p {
+  font-size: 26px;
+  font-weight: 300; }
+
+/* font sizes */
+.font13 {
+  font-size: 13px !important;
+  line-height: 21px; }
+
+.font16 {
+  font-size: 16px !important;
+  line-height: 24px; }
+
+.font18 {
+  font-size: 18px !important;
+  line-height: 26px; }
+
+.font20 {
+  font-size: 1 rem;
+  font-size: 20px;
+  line-height: 28px; }
+
+.font24 {
+  font-size: 1.2 rem;
+  font-size: 24px;
+  line-height: 38px; }
+
+.font26 {
+  font-size: 1.3 rem;
+  font-size: 26px;
+  line-height: 42px; }
+
+.font30 {
+  font-size: 1.5 rem;
+  font-size: 30px;
+  line-height: 38px; }
+
+.font34 {
+  font-size: 1.7 rem;
+  font-size: 34px;
+  line-height: 42px; }
+
+.font35 {
+  font-size: 1.75 rem;
+  font-size: 35px;
+  line-height: 43px; }
+
+.font36 {
+  font-size: 1.8 rem;
+  font-size: 36px;
+  line-height: 46px; }
+
+.font46 {
+  font-size: 2.3 rem;
+  font-size: 46px;
+  line-height: 60px; }
+
+.font55 {
+  font-size: 2.75 rem;
+  font-size: 55px;
+  line-height: 63px;
+  padding: 20px 0 30px;
+  margin: 0; }
+
+.padding10 {
+  padding: 10px 0; }
+
+.padding50 {
+  padding: 50px 0; }
+
+.nopadding {
+  padding: 0; }
+
+.nomargin {
+  margin: 0; }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* misc style */
+.site-footer {
+  margin-top: 50px;
+  color: #656D78;
+  background: #F3F3F4; }
+
+.CrossPageNavigation {
+  margin: 60px 0;
+  display: inline-block; }
+
+.social-icons {
+  float: right;
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 0; }
+  .social-icons li {
+    transition: all .15s linear;
+    margin-left: 15px;
+    list-style: none;
+    display: inline;
+    color: #4a4a4a; }
+    .social-icons li a {
+      color: #4a4a4a;
+      font-size: 26px;
+      text-decoration: none;
+      border-bottom: 0; }
+      .social-icons li a:hover {
+        color: #4A89DC !important; }
+
+.social-icons--footer {
+  float: right;
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 0px; }
+  .social-icons--footer li {
+    transition: all .15s linear;
+    margin-right: 15px;
+    list-style: none;
+    display: inline;
+    color: #4a4a4a; }
+    .social-icons--footer li a {
+      color: #4a4a4a;
+      font-size: 26px;
+      text-decoration: none;
+      border-bottom: 0; }
+      .social-icons--footer li a:hover {
+        color: #4A89DC !important; }
+
+.fa {
+  color: #4a4a4a; }
+  .fa a {
+    color: #4a4a4a;
+    font-size: 26px;
+    text-decoration: none;
+    border-bottom: 0; }
+    .fa a:hover {
+      color: #4A89DC !important; }
+
+.site-nav {
+  float: right;
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 0; }
+  .site-nav li {
+    margin-right: 15px;
+    list-style: none;
+    display: inline; }
+    .site-nav li a {
+      color: #4a4a4a;
+      border-bottom: 2px solid #2F75C5; }
+
+#instafeed img {
+  height: 172px;
+  margin: 40px 10px 40px 0; }
+
+#instafeed a {
+  border: 0px; }
+
+.work ul {
+  margin: 0;
+  padding: 0; }
+
+.work li {
+  list-style-type: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative; }
+
+.work li a {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4a4a4a;
+  margin-right: 2rem;
+  border-bottom: 0px solid #4a4a4a;
+  margin-bottom: 2rem; }
+
+.work li hr {
+  width: 4rem;
+  margin: 11px 25px 0 0;
+  vertical-align: text-top;
+  border-top: 1px solid #4a4a4a;
+  display: inline-block;
+  box-sizing: content-box;
+  height: 0; }
+
+.work li .platforms {
+  font-size: 20px;
+  display: inline-block;
+  color: #4a4a4a; }
+
+.rwd-break {
+  display: none; }
+
+.offset-lg-1 {
+  margin-left: 8.333333%; }
+
+/* misc */
+.hide640 {
+  display: inline-block; }
+
+.show1080 {
+  display: none; }
+
+.show600 {
+  display: none; }
+
+.show640 {
+  display: none; }
+
+.show750 {
+  display: none; }
+
+.height16 {
+  height: 16px;
+  clear: both; }
+
+.height30 {
+  height: 30px;
+  clear: both; }
+
+.height40 {
+  height: 40px;
+  clear: both; }
+
+.height60 {
+  height: 60px;
+  clear: both; }
+
+.fontgrey {
+  color: #F6F6F6; }
+
+.fontwhite {
+  color: white; }
+
+.padding-right--d {
+  padding-right: 30px; }
+
+.platform {
+  padding: 10px 0 10px 0;
+  color: #a1a1a1; }
+
+.lightgrey {
+  color: #656D78; }
+
+.strong {
+  font-weight: bold;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+hr {
+  width: 4rem;
+  margin-right: 1.5rem;
+  vertical-align: text-top;
+  border-top: 1px;
+  display: inline-block;
+  box-sizing: content-box;
+  height: 0; }
+
+.noborder {
+  border: 0 !important; }
+
+.animate_steps1 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.animate_steps2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.animate_steps3 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
+
+.animate_steps4 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.animate_steps5 {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s; }
+
+.animate_steps6 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+.animate_steps7 {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s; }
+
+.animate_steps8 {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s; }
+
+#instafeed img {
+  height: 264px;
+  margin: 40px 20px 0px 0; }
+
+/**
+ * @section Alignment, Spacing, & Visibility
+ * Override defaults.
+ */
+/**
+ * Text alignment
+ */
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+/**
+ * Floats
+ */
+.float-left {
+  float: left; }
+
+.float-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.float-right {
+  float: right; }
+
+/**
+ * Spacing
+ */
+.no-space {
+  margin: 0;
+  padding: 0; }
+
+.no-space-bottom {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.no-space-top {
+  margin-top: 0;
+  padding-top: 0; }
+
+.space-bottom {
+  margin-bottom: 1em; }
+
+.space-bottom-small {
+  margin-bottom: 0.5em;
+  padding-bottom: 0; }
+
+.space-bottom-large {
+  margin-bottom: 2em; }
+
+.space-top {
+  padding-top: 0.8125em; }
+
+.space-top-small {
+  padding-top: 0.8125em; }
+
+.no-space-horizontal {
+  padding-left: 0;
+  padding-right: 0; }
+
+/**
+ * Visibility
+ */
+.screen-reader {
+  position: absolute;
+  top: -9999em;
+  left: -9999em; }
+
+/**
+ * @workaround
+ * @affected IE 8/9/10
+ */
+[hidden] {
+  display: none;
+  visibility: hidden; }
+
+/**
+ * Clearfix
+ */
+.group:before, .container:before,
+.row:before,
+.group:after,
+.container:after,
+.row:after {
+  display: table;
+  content: ""; }
+
+
+.group:after,
+.container:after,
+.row:after {
+  clear: both; }
+
+@media (min-width: 40em) {
+  .grid-fourth {
+    width: 50%; }
+  .offset-three-fourths {
+    width: 25%; } }
+
+@media (min-width: 60em) {
+  .grid-fourth {
+    width: 25%; } }
+
+.block {
+  display: block; }
+
+.promotedPartners {
+  margin: 1.875em 0; }
+
+.opaqueBg {
+  background-color: rgba(255, 255, 255, 0.9); }
+
+.hide-text {
+  text-indent: -500px;
+  overflow: hidden;
+  font: 10px monospace;
+  letter-spacing: -10px; }
+
+.underlined {
+  text-decoration: underline; }
+
+.percent-20 {
+  width: 20%; }
+
+.percent-40 {
+  width: 40%; }
+
+/* flexbox only */
+.flexbox .flex {
+  display: flex;
+  align-items: center; }
+  .flexbox .flex.inline > * {
+    margin-right: 0.75em; }
+
+.flexbox .space-between {
+  justify-content: space-between; }
+
+.flexbox .flex-end {
+  justify-content: flex-end; }
+
+.flexbox .flex-start {
+  justify-content: flex-start; }
+
+.flexbox .stretch {
+  align-self: stretch; }
+
+.no-flexbox .flex-end {
+  text-align: right; }
+
+/**
+ * @section Print
+ * Styling for printed content. Adapted from HTML5BP.
+ * @link http://html5boilerplate.com
+ */
+@media print {
+  /**
+	 * Universal selector.
+	 * Reset all content to transparent background, black color, and remove box and text shadows.
+	 */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  /**
+	 * Specifies page margin
+	 */
+  @page {
+    margin: 0.5cm; }
+  /**
+	 * Underline all links
+	 */
+  a,
+  a:visited {
+    text-decoration: none; }
+  /**
+	 * Show URL after links
+	 */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  /**
+	 * Don't show URL for internal links
+	 */
+  a[href^="#"]:after {
+    content: ""; }
+  /**
+	 * Specifies the minimum number of lines to print at the top and bottom of a page.
+	 */
+  p,
+  h1, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  /**
+	 * Avoid inserting a page break after headers
+	 */
+  h1, h2, h3 {
+    page-break-after: avoid; }
+  /**
+	 * Change border color on blockquotes and preformatted text.
+	 * Avoid page breaks inside the content
+	 */
+  pre,
+  blockquote {
+    border-color: #999;
+    page-break-inside: avoid; }
+  /**
+	 * Displayed as a table header row group
+	 */
+  thead {
+    display: table-header-group; }
+  /**
+	 * Avoid inserting a page break inside table rows and images
+	 */
+  tr,
+  img {
+    page-break-inside: avoid; } }
+
+/*------------------------------------*\
+	$MEDIA QUERIES
+\*------------------------------------*/
+/*------------------------------------*\
+	$IE HACKS AND FIXES
+\*------------------------------------*/

@@ -1,0 +1,56 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+          <div class="grid-half">
+           
+           <p>I'm always on the look out for exciting things to do and talk about.
+           <a href="contact">Get in touch</a> if you want to make some magic together.</p>
+           <br><br>
+           <p>Subscribe to this blog's <a href="/feed.xml">RSS feed</a>.</p>
+
+			<div class="clearfix"></div>
+           
+           </div>
+
+		<div class="grid-half">
+		
+           <p style="text-align: right;">
+           	<a href="/contact">Work with me</a><br>
+           	<a href="http://twitter.com/mikeycattell">Twitter</a><br>
+           	<a href="https://www.linkedin.com/in/michaelcattell/">LinkedIn</a>		
+           	<br>
+			<ul class="social-icons--footer">
+			<li><a href="http://twitter.com/mikeycattell"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+			<li><a href="http://dribbble.com/mikeycattell"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+			<li><a href="http://instagram.com/mikeycattell"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+			</p>	
+
+
+           </div> 
+
+          <div class="grid-full">
+          <br><br>
+          	<p>Copyright © 2018 <a href="http://www.michaelcattell.com">Michael Cattell Design ltd</a>. All rights reserved.</p>
+          </div>          
+
+  </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+<script>
+//Custom last fm goodness to get one recent track
+	$.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=mikey_cattell&api_key=3a0c7893380b63813c55ac2899afa1d4&limit=2&nowplaying=false&format=json&callback=?", function(data) {
+		var html = '';
+		var counter = 1;
+		$.each(data.recenttracks.track, function(i, item) {
+			if(counter == 1) {
+			html += '<span><a href="' + item.url + '" target="_blank">' + item.name + '</a> - ' + item.artist['#text'] + '</span>';
+			}
+			counter++
+		});
+
+		$('.listening-to').append(html);
+
+	});
+</script>
+</footer>

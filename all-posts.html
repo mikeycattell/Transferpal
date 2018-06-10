@@ -1,0 +1,21 @@
+---
+layout: page--other
+title: Writing
+---
+
+<article class="post">
+
+  <div class="wrapper">
+	<div class="grid-full allposts font30">    
+	
+	  {% for post in site.posts %}
+	    <p>
+	      <span class="font13">{{ post.date |  date: "%-d %B %Y" }}</span><br />
+	        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	    </p>
+	    {% endfor %}
+	</div>
+	  </div>
+
+	</div>
+</article>
