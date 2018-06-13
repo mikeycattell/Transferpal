@@ -681,6 +681,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/instafeed.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/instafeed.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/instafeed.min.js": {
 		"ft": 64,
 		"ma": 0,

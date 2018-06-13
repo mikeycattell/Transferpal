@@ -839,8 +839,10 @@ header {
 /* misc style */
 .site-footer {
   margin-top: 50px;
+  padding: 50px 0;
   color: #656D78;
-  background: #F3F3F4; }
+  background: #F3F3F4;
+  font-size: 20px; }
 
 .CrossPageNavigation {
   margin: 60px 0;
