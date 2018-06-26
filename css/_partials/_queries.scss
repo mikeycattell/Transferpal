@@ -29,12 +29,18 @@
 
 
 //700px iphone 6 landscape
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+.hide600 { display: none; }	
 
 }
 
 
 //480px
 @media screen and (max-width: 600px) {
+.wrapper { padding: 0 10px; }
 
+.header-title p { padding-left: 10px; font-size: 30px; line-height: 46px; font-weight: 300; }
+.header-title h1 { margin-top: 20px; }
+.offset-lg-1 { margin-left: 0;}
+.header-title .image-container { padding-bottom: 20px; width: 100%; }
 }

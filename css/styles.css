@@ -698,10 +698,10 @@ header {
 
 /*font styles */
 .header-title h1 {
-  font-size: 26px;
+  font-size: 20px;
   position: relative;
   margin: 0;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 4.5rem;
   line-height: 4.2rem; }
 
@@ -715,12 +715,22 @@ header {
   height: .2rem;
   content: ""; }
 
+.header-title p {
+  padding-left: 70px;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 300; }
+
+.header-title .image-container {
+  padding-bottom: 0;
+  width: 50vw; }
+
 .header-title-gen h1 {
-  font-size: 26px;
+  font-size: 20px;
   position: relative;
   margin: 0;
   margin-top: 10px;
-  margin-left: 4.5rem;
+  margin-left: 3.0rem;
   line-height: 4.2rem; }
 
 .header-title-gen h1:before {
@@ -735,14 +745,15 @@ header {
 
 .header-title-gen p {
   font-size: 40px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-left: 50px; }
 
 .header-title-work h1 {
-  font-size: 26px;
+  font-size: 20px;
   position: relative;
   margin: 0;
   margin-top: 10px;
-  margin-left: 4.5rem;
+  margin-left: 3.0rem;
   line-height: 4.2rem; }
 
 .header-title-work h1:before {
@@ -757,7 +768,8 @@ header {
 
 .header-title-work p {
   font-size: 26px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-left: 50px; }
 
 /* font sizes */
 .font13 {
@@ -1052,7 +1064,7 @@ hr {
 
 #instafeed img {
   height: 264px;
-  margin: 40px 20px 0px 0; }
+  margin: 30px 20px 0px 0; }
 
 /**
  * @section Alignment, Spacing, & Visibility
@@ -1279,6 +1291,26 @@ hr {
 /*------------------------------------*\
 	$MEDIA QUERIES
 \*------------------------------------*/
+@media screen and (max-width: 600px) {
+  .hide600 {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 0 10px; }
+  .header-title p {
+    padding-left: 10px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 300; }
+  .header-title h1 {
+    margin-top: 20px; }
+  .offset-lg-1 {
+    margin-left: 0; }
+  .header-title .image-container {
+    padding-bottom: 20px;
+    width: 100%; } }
+
 /*------------------------------------*\
 	$IE HACKS AND FIXES
 \*------------------------------------*/
