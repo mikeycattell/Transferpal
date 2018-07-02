@@ -659,6 +659,17 @@
 		"oAP": "\/all-posts.html",
 		"oF": 0
 		},
+	"\/assets\/about--lead.jpg": {
+		"ft": 16384,
+		"iS": 728236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/assets\/about--lead.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/about.jpg": {
 		"ft": 16384,
 		"iS": 35123,
@@ -1234,6 +1245,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/skysports-fantasyfootball.html",
+		"oF": 0
+		},
+	"\/skysportsfantasyfootball.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/skysportsfantasyfootball.html",
 		"oF": 0
 		},
 	"\/webfonts\/fontawesome-webfont.eot": {
