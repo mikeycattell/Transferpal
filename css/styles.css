@@ -1291,17 +1291,33 @@ hr {
 /*------------------------------------*\
 	$MEDIA QUERIES
 \*------------------------------------*/
-@media screen and (max-width: 600px) {
-  .hide600 {
-    display: none; } }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .wrapper {
     padding: 0 10px; }
+  .header-title-gen h1:before {
+    top: 25%; } }
+
+@media screen and (max-width: 600px) {
+  .hide600 {
+    display: none; }
+  .wrapper {
+    padding: 0 10px; }
+  .header-title-gen h1 {
+    line-height: 30px; }
+  .header-title-gen h1:before {
+    top: 15%; }
+  .header-title-gen p {
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 300; }
   .header-title p {
     padding-left: 10px;
-    font-size: 30px;
-    line-height: 46px;
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 300; }
+  .header-title-work p {
+    font-size: 26px;
+    line-height: 42px;
     font-weight: 300; }
   .header-title h1 {
     margin-top: 20px; }
@@ -1309,7 +1325,13 @@ hr {
     margin-left: 0; }
   .header-title .image-container {
     padding-bottom: 20px;
-    width: 100%; } }
+    width: 100%; }
+  .font46 {
+    font-size: 32px;
+    line-height: 44px; }
+  .font30 {
+    font-size: 28px;
+    line-height: 34px; } }
 
 /*------------------------------------*\
 	$IE HACKS AND FIXES
