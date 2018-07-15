@@ -703,7 +703,8 @@ header {
   margin: 0;
   margin-top: 10%;
   margin-left: 4.5rem;
-  line-height: 4.2rem; }
+  line-height: 32px;
+  margin-bottom: 20px; }
 
 .header-title h1:before {
   display: block;
@@ -731,7 +732,8 @@ header {
   margin: 0;
   margin-top: 10px;
   margin-left: 3.0rem;
-  line-height: 4.2rem; }
+  line-height: 32px;
+  margin-bottom: 20px; }
 
 .header-title-gen h1:before {
   display: block;
@@ -754,7 +756,8 @@ header {
   margin: 0;
   margin-top: 10px;
   margin-left: 3.0rem;
-  line-height: 4.2rem; }
+  line-height: 32px;
+  margin-bottom: 20px; }
 
 .header-title-work h1:before {
   display: block;
@@ -1303,7 +1306,8 @@ hr {
   .wrapper {
     padding: 0 10px; }
   .header-title-gen h1 {
-    line-height: 30px; }
+    line-height: 30px;
+    margin-bottom: 30px; }
   .header-title-gen h1:before {
     top: 15%; }
   .header-title-gen p {

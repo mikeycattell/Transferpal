@@ -32,7 +32,7 @@
 @media screen and (max-width: 600px) {
 .hide600 { display: none; }	
 .wrapper { padding: 0 10px; }
-.header-title-gen h1 { line-height: 30px;}
+.header-title-gen h1 { line-height: 30px; margin-bottom: 30px; }
 .header-title-gen h1:before { top: 15%; }
 .header-title-gen p { font-size: 26px; line-height: 42px; font-weight: 300; }
 .header-title p { padding-left: 10px; font-size: 26px; line-height: 42px; font-weight: 300; }
