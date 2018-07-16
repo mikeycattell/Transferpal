@@ -6,6 +6,7 @@ body{ height: 0; background: #fff; color: $color-primary; margin: 0 0 0 0; @incl
 .wrapper { max-width: 1170px; margin: 0 auto; padding: 0;
 	@extend %clearfix;
 }
+ul li { margin-left: 21px; }
 
 /*--- LINKS ---*/
 
@@ -72,7 +73,7 @@ header { margin-top: 80px;
     	a { color: #4a4a4a; font-size: 26px; text-decoration: none; border-bottom: 0;
     		&:hover { color: #4A89DC!important; }
     	}
-    }    	
+    }
 }
 
 .social-icons--footer {
@@ -81,15 +82,15 @@ header { margin-top: 80px;
     	a { color: #4a4a4a; font-size: 26px; text-decoration: none; border-bottom: 0;
     		&:hover { color: #4A89DC!important; }
     	}
-    }    	
+    }
 }
-.fa { color: #4a4a4a; 
+.fa { color: #4a4a4a;
         a { color: #4a4a4a; font-size: 26px; text-decoration: none; border-bottom: 0;
             &:hover { color: #4A89DC!important; }
         }
 }
 
-.site-nav { 
+.site-nav {
 	float: right; display: inline-block; margin-left: 0; margin-top: 0;
     li { margin-right: 15px; list-style: none; display: inline;
     	a { color: #4a4a4a; border-bottom: 2px solid #2F75C5; }
