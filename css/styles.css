@@ -667,6 +667,9 @@ body {
   margin: 0 auto;
   padding: 0; }
 
+ul li {
+  margin-left: 21px; }
+
 /*--- LINKS ---*/
 a,
 a:visited {
@@ -1294,11 +1297,15 @@ hr {
 /*------------------------------------*\
 	$MEDIA QUERIES
 \*------------------------------------*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
   .wrapper {
     padding: 0 10px; }
   .header-title-gen h1:before {
-    top: 25%; } }
+    top: 25%; }
+  .header-title p {
+    font-size: 26px;
+    line-height: 42px;
+    font-weight: 300; } }
 
 @media screen and (max-width: 600px) {
   .hide600 {
