@@ -3,13 +3,13 @@
 .btn {
 	display: inline-block;
 	font-family: $font-primary; 
-	@include font-rempx(26);
+	@include font-rempx(18);
 	padding: 18px 80px;
 	line-height: 1.2;
 	font-weight: normal;
 	background-color: $color-primary;
-	 border: 0;
-	border-radius: calc-em(20px);
+	border: 0px;
+	border-radius: calc-em(30px);
 	margin-right: calc-em(5px);
 	margin-bottom: calc-em(5px);
 }
