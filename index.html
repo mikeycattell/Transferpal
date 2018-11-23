@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Arvo:400,700i|Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="js/wow.min.js"></script>
   <link rel="canonical" href="">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -42,6 +43,7 @@
             <ul class="site-nav">
                 <li><a href="about.html">REGISTER  |  LOGIN</a></li>
                 <li><a href="work.html">ABOUT US</a></li>
+                <li><a href="#whatwedo" class="scrollLink">WHAT WE DO</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
       </div>
@@ -51,7 +53,7 @@
           <h1>Introducing a new way to manage your transfer company</h1>
           <p class="sub-text">TransferPal makes it easy to add jobs, assign them and estimates how long everything will take.</p>
           <br>
-          <a class="btn">Free for 30 days!</a><br>
+          <a class="btn showup750">Free for 30 days!</a><br>
           <!--<img style="margin: 40px 0;" src="assets/contactme.png">-->
           <br>
         </div>
@@ -85,7 +87,7 @@
           <h2>Stay connected</h2>
           <p>Driver apps let you know when a driver has set off, track them mid-journey or help them navigate.</p>
         </div>
-    </div> 
+    </div>
     <div class="clearfix"></div>
     <div class="grid-third">
       <div class="box-item">
@@ -107,23 +109,23 @@
         <h2>Automatic invoices</h2>
         <p>Let us do the heavy lifting. At the end of the month we will tally up each client's unpaid jobs and email them an itemised invoice complete with your logo and information.</p>
       </div>
-    </div>      
+    </div>
   </div>
 </div>
 
 <div class="clearfix"></div>
 
 
-    <div class="wrapper">
+    <div class="wrapper" id="whatwedo">
       <div class="grid-full">
         <h3>How it works</h3>
       </div>
       <div class="grid-half">
         <p class="howitworks">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
 
-        <img class="howitworks--alert" src="assets/home--bookingalert.png">
-        <img class="howitworks--alert pull-right" src="assets/home--bookingalert.png">
-        <img class="howitworks--alert" src="assets/home--bookingalert.png">
+        <img class="howitworks--alert wow fadeIn animated " src="assets/home--bookingalert.png">
+        <img class="howitworks--alert pull-right wow fadeIn animated animate_steps1" src="assets/home--bookingalert.png">
+        <img class="howitworks--alert wow fadeIn animated animate_steps2" src="assets/home--bookingalert.png">
 
       </div>
 
@@ -149,16 +151,16 @@
             <p class="sizeup">Try TransferPal<br><strong>Free for 30 days!</strong></p>
         </div>
         <div class="grid-four-tenths">
-            <a style="margin-top: 40px;" class="btn">Sign up today</a>
-        </div> 
+            <a class="btn wow fadeIn animated">Sign up today</a>
+        </div>
         <div class="grid-full">
           <p>TransferPal has a very simple billing structure right now: <strong>access to all this for the flat monthly rate of £25!</strong></p>
-        </div>     
-      </div> 
+        </div>
+      </div>
 
-      
 
-      
+
+
 
 
     </div>
@@ -202,6 +204,17 @@
 
 </footer>
 
+<div class="stickyfooter hide750"><a class="btn">Sign up today!</a></div>
 
+<script>
+ new WOW().init();
+
+ $(document).ready(function () {
+            $("a.scrollLink").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+            });
+        });
+</script>
 </body>
 </html>

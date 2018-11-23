@@ -23,14 +23,14 @@ a:hover { color: #4A89DC!important; border-color: #4A89DC!important; text-decora
 
 header { padding-top: 40px; background-color: #71B315; color: #fff;
     background: url("../assets/home-header.jpg");overflow: auto; height: 717px;
-    
+
 	.logo a { font-weight: 700; border-bottom: 0px; font-size: 30px; padding-bottom: 80px; color: #fff; }
     .site-nav { float: left; display: inline-block; margin-left: 0; margin-top: 0; padding-bottom: 120px; padding-top: 8px;
         li { margin-right: 15px; list-style: none; display: inline;
             a { font-weight: 700; color: #fff; border-bottom: 0px solid $color-primary; letter-spacing: 1.4px; }
         }
     }
-    h1 { font-size: 36px; font-family: 'Arvo', serif; } 
+    h1 { font-size: 36px; font-family: 'Arvo', serif; }
     .sub-text { font-size: 18px; }
     .btn { margin-bottom: 0px}
     .header--text { margin-left: 80px }
@@ -40,16 +40,15 @@ header { padding-top: 40px; background-color: #71B315; color: #fff;
     .box-item { background: white; border: 1px solid #EBEBEB; padding: 8px 24px 8px;  margin-bottom: 24px; min-height: 260px; }
     span { font-size: 30px; color: $color-primary; }
     h2 { font-size: 22px; padding-bottom: 8px; }
-
-
 }
 
 .howitworks { font-size: 16px; line-height: 30px; }
 .howitworks--alert { margin-top: 40px; box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.10), 0 10px 24px 0 rgba(0, 0, 0, 0.10); }
 .whatwecando--holder { margin-top: 32px; padding: 56px 64px; border: 0.5px solid #d6d6d6; box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.10), 0 10px 24px 0 rgba(0, 0, 0, 0.10); }
 
-.signup--container { margin-top: 72px; margin-bottom: 0; margin-left: 56px; 
+.signup--container { margin-top: 72px; margin-bottom: 0; margin-left: 56px;
     p.sizeup { font-size: 72px; line-height: 76px; margin-bottom: 32px; }
+		.btn { margin-top: 40px; }
 }
 
 
@@ -72,7 +71,7 @@ h3 { font-size: 28px; margin-bottom: 16px; }
 /* misc style */
 
 .site-footer { margin-top: 50px; padding: 50px 0; color: #000; background: #fff; font-size: 20px; border-top: 1px solid #d6d6d6;
-    
+
     .logo a { font-weight: 700; border-bottom: 0px; font-size: 30px; padding-bottom: 10px; color: #000; }
     .site-nav { float: left; display: inline-block; margin-left: 0; margin-top: 0; padding-bottom: 20px; padding-top: 8px;
         li { margin-right: 15px; list-style: none; display: inline;
@@ -97,10 +96,11 @@ ul.tick {  list-style-type: none; margin: 0px 0 16px; padding: 0;
 .height40 { height: 40px; clear: both; }
 .height60 { height: 60px; clear: both; }
 
+.showup750 { display: block; }
+.hide750 { display: none; }
+
 .fontgrey { color: #F6F6F6; }
 .fontwhite { color: white; }
-
-
 
 .animate_steps1 { -webkit-animation-delay: 0.5s; animation-delay: 0.5s; }
 .animate_steps2 { -webkit-animation-delay: 1s; animation-delay: 1s;}
@@ -110,5 +110,3 @@ ul.tick {  list-style-type: none; margin: 0px 0 16px; padding: 0;
 .animate_steps6 { -webkit-animation-delay: 3s; animation-delay: 3s ; }
 .animate_steps7 { -webkit-animation-delay: 3.5s; animation-delay: 3.5s ; }
 .animate_steps8 { -webkit-animation-delay: 4s; animation-delay: 4s ; }
-
-

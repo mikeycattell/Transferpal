@@ -880,6 +880,8 @@ header {
     font-size: 72px;
     line-height: 76px;
     margin-bottom: 32px; }
+  .signup--container .btn {
+    margin-top: 40px; }
 
 /*font styles */
 h1, h2, h3, h4, h5 {
@@ -962,6 +964,12 @@ ul.tick {
 .height60 {
   height: 60px;
   clear: both; }
+
+.showup750 {
+  display: block; }
+
+.hide750 {
+  display: none; }
 
 .fontgrey {
   color: #F6F6F6; }
@@ -1226,46 +1234,73 @@ ul.tick {
 /*------------------------------------*\
 	$MEDIA QUERIES
 \*------------------------------------*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 60em) {
+  header h1 {
+    font-size: 26px;
+    line-height: 34px;
+    font-family: 'Arvo', serif; }
+  header .sub-text {
+    font-size: 18px; }
+  header .header--text {
+    margin-left: 0; }
+  .whyloveus {
+    margin-top: -50px; }
+    .whyloveus .box-item {
+      background: white;
+      border: 1px solid #EBEBEB;
+      padding: 8px 24px 8px;
+      margin-bottom: 24px;
+      min-height: auto; }
+    .whyloveus span {
+      font-size: 30px;
+      color: #0A5FFF; }
+    .whyloveus h2 {
+      font-size: 22px;
+      padding-bottom: 8px; }
+  .whatwecando--holder {
+    margin-top: 32px;
+    padding: 16px 10px;
+    border: 0 solid #d6d6d6;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0), 0 10px 24px 0 rgba(0, 0, 0, 0); }
+  .signup--container {
+    border-top: 1px solid #d6d6d6;
+    margin-top: 0;
+    padding: 20px 0;
+    margin-bottom: 0;
+    margin-left: 0px; }
+    .signup--container p.sizeup {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 0px; }
+    .signup--container .btn {
+      margin: 20px 0; }
+  .btn {
+    padding: 20px 50px; } }
+
+@media screen and (max-width: 750px) {
   .wrapper {
     padding: 0 10px; }
-  .header-title-gen h1:before {
-    top: 25%; }
-  .header-title p {
-    font-size: 26px;
-    line-height: 42px;
-    font-weight: 300; } }
+  .stickyfooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    z-index: 999999;
+    background-color: #fafafa;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    margin: 0 auto; }
+  .hide750 {
+    display: block; }
+  .showup750 {
+    display: none; }
+  ul li {
+    margin-left: 0px; } }
 
 @media screen and (max-width: 600px) {
   .hide600 {
     display: none; }
-  .wrapper {
-    padding: 0 10px; }
-  .header-title-gen h1 {
-    line-height: 30px;
-    margin-bottom: 30px; }
-  .header-title-gen h1:before {
-    top: 15%; }
-  .header-title-gen p {
-    font-size: 26px;
-    line-height: 42px;
-    font-weight: 300; }
-  .header-title p {
-    padding-left: 10px;
-    font-size: 26px;
-    line-height: 42px;
-    font-weight: 300; }
-  .header-title-work p {
-    font-size: 26px;
-    line-height: 42px;
-    font-weight: 300; }
-  .header-title h1 {
-    margin-top: 20px; }
-  .offset-lg-1 {
-    margin-left: 0; }
-  .header-title .image-container {
-    padding-bottom: 20px;
-    width: 100%; }
   .font46 {
     font-size: 32px;
     line-height: 44px; }
