@@ -286,7 +286,7 @@ a:active {
 /*--type variables--*/
 /* rem sizing function */
 body {
-  color: #151515;
+  color: #333333;
   font-size: 0.8 rem;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -341,13 +341,13 @@ body {
   font-size: 0.8 rem;
   font-size: 16px;
   line-height: 22px;
-  color: #151515;
+  color: #333333;
   margin-bottom: 10px; }
 
 .epsilon {
   text-transform: uppercase;
   font-weight: 700;
-  color: #151515;
+  color: #333333;
   font-size: 0.7 rem;
   font-size: 14px; }
 
@@ -382,7 +382,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 20;
   line-height: 1.5;
-  color: #151515;
+  color: #333333;
   background: #ffffff; }
   @media (min-width: 40em) {
     body {
@@ -409,7 +409,7 @@ p {
  * Alternate text colors
  */
 .text-muted {
-  color: #808080; }
+  color: #555555; }
 
 /**
  * Hyperlink styling
@@ -582,7 +582,7 @@ textarea,
 select {
   font: inherit;
   line-height: 1.5;
-  color: #434343;
+  color: #616161;
   padding: 0.3125em;
   border-radius: 0;
   font-weight: 300;
@@ -688,8 +688,8 @@ a .btn:active,
 
 .btn-secondary {
   background-color: transparent;
-  border-color: #151515;
-  color: #151515 !important; }
+  border-color: #333333;
+  color: #333333 !important; }
 
 .btn-secondary:hover,
 a .btn-secondary:hover,
@@ -698,8 +698,8 @@ a .btn-secondary:focus,
 .btn-secondary:active,
 a .btn-secondary:active,
 .btn-secondary.active {
-  background-color: black;
-  border-color: black;
+  background-color: #0d0d0d;
+  border-color: #0d0d0d;
   color: #ffffff !important; }
 
 .btn-small {
@@ -714,8 +714,8 @@ a .btn-secondary:focus,
 .btn-secondary:active,
 a .btn-secondary:active,
 .btn-secondary.active {
-  background-color: black;
-  border-color: black;
+  background-color: #0d0d0d;
+  border-color: #0d0d0d;
   color: #ffffff !important; }
 
 .btn:active,
@@ -810,7 +810,10 @@ header {
   color: #fff;
   background: url("../assets/home-header.jpg");
   overflow: auto;
-  height: 717px; }
+  height: 717px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
   header .logo a {
     font-weight: 700;
     border-bottom: 0px;
@@ -1244,7 +1247,7 @@ ul.tick {
   header .header--text {
     margin-left: 0; }
   .whyloveus {
-    margin-top: -50px; }
+    margin-top: -110px; }
     .whyloveus .box-item {
       background: white;
       border: 1px solid #EBEBEB;
@@ -1296,7 +1299,23 @@ ul.tick {
   .showup750 {
     display: none; }
   ul li {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  header .site-nav {
+    float: left;
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+    padding-bottom: 70px;
+    padding-top: 8px; }
+    header .site-nav li {
+      margin-right: 15px;
+      list-style: none;
+      display: inline; }
+      header .site-nav li a {
+        font-weight: 700;
+        color: #fff;
+        border-bottom: 0px solid #0A5FFF;
+        letter-spacing: 1.4px; } }
 
 @media screen and (max-width: 600px) {
   .hide600 {

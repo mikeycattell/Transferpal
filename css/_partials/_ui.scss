@@ -22,7 +22,8 @@ a:hover { color: #4A89DC!important; border-color: #4A89DC!important; text-decora
 
 
 header { padding-top: 40px; background-color: #71B315; color: #fff;
-    background: url("../assets/home-header.jpg");overflow: auto; height: 717px;
+    background: url("../assets/home-header.jpg");overflow: auto; height: 717px; width: 100%; background-repeat: no-repeat;
+    background-position: center; 
 
 	.logo a { font-weight: 700; border-bottom: 0px; font-size: 30px; padding-bottom: 80px; color: #fff; }
     .site-nav { float: left; display: inline-block; margin-left: 0; margin-top: 0; padding-bottom: 120px; padding-top: 8px;
